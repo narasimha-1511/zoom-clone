@@ -10,6 +10,11 @@
   .flex-between{
     @apply flex items-center justify-between;
   }
+} 
+
+/*  clerk override css */
+.cl-providerIcon__github{
+  filter: invert(1)
 }
 
 @layer base {
