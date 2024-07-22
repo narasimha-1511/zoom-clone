@@ -11,7 +11,7 @@ const MeetingTypeList = () => {
   >();
 
   const createMeeting = () => {
-    router.push("/meeting");
+    router.push("/meeting/random_room_id");
   };
 
   return (
