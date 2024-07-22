@@ -29,6 +29,12 @@ const config = {
         sky: {
           1: "#C9DDFF",
         },
+        purple: {
+          1: "#A56BFF",
+        },
+        yellow: {
+          1: "#FFD700",
+        },
         orange: {
           1: "#FFA500",
         },

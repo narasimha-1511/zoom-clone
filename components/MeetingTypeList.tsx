@@ -1,27 +1,35 @@
 "use client";
-import Image from "next/image";
 import React from "react";
+import HomeCard from "./HomeCard";
 
 const MeetingTypeList = () => {
   return (
     <section className="grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-4">
-      <div
-        onClick={() => {}}
-        className="bg-orange-1 px-4 py-6 flex flex-col justify-between w-full xl:max-w-[270px] min-h-[260px] rounded-[14px] cursor-pointer"
-      >
-        <div className="flex-center glassmorphism size-12 rounded-[10px]">
-          <Image
-            src="/icons/add-meeting.svg"
-            width={27}
-            height={27}
-            alt="meeting"
-          />
-        </div>
-        <div className="flex flex-col gap-2">
-          <h1 className="text-2xl font-bold"> New Meeting</h1>
-          <p className="text-lg font-normal">Start an Instant Meeting</p>
-        </div>
-      </div>
+      <HomeCard
+        ImageSrc="/icons/add-meeting.svg"
+        color="bg-orange-1"
+        title="New Meeting"
+        description="Start an Instant Meeting"
+      />
+      <HomeCard
+        ImageSrc="/icons/add-meeting.svg"
+        color="bg-blue-1"
+        title="Schedule Meeting"
+        description="Plan your Meeting"
+      />
+      <HomeCard
+        ImageSrc="/icons/join-meeting.svg"
+        color="bg-purple-1"
+        title="Join Meeting"
+        description="Via Invitation Link"
+      />
+      <HomeCard
+        ImageSrc="/icons/recordings.svg"
+        color="bg-yellow-1"
+        title="View Recordings"
+        description="Checkout your recordings"
+        // handleClick="/recordings"
+      />
     </section>
   );
 };
