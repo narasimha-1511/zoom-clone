@@ -1,7 +1,7 @@
+import MeetingTypeList from "@/components/MeetingTypeList";
 import React from "react";
 
 const Home = () => {
-
   const now = new Date();
   const time = now.toLocaleTimeString("en-IN", {
     hour: "2-digit",
@@ -27,6 +27,8 @@ const Home = () => {
           </div>
         </div>
       </div>
+
+      <MeetingTypeList />
     </section>
   );
 };
