@@ -53,16 +53,16 @@ const MeetingModal = ({
             className="bg-blue-1 focus-visible:ring-0 focus-visible:ring-offset-0"
             onClick={handleClick}
           >
-            {buttonText || "Schedule Meeting"}
             {buttonIcon && (
               <Image
                 src={buttonIcon}
                 alt="button icon"
-                width={24}
-                height={24}
-                className="ml-2"
+                width={13}
+                height={13}
               />
             )}
+            &nbsp;
+            {buttonText || "Schedule Meeting"}
           </Button>
         </div>
       </DialogContent>
